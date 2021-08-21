@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac-Book-Pro</title>
+    <!-- tailwind CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-100">
+    <main>
+        <section>
+          <div class="grid grid-cols-2 my-8">
+            <div>
+                <img class="w-6/12 mx-36 my-6" src="images/mac-book.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-3xl font-semibold">Customize your Blue 24-inch</h1>
+                <h2 class="text-3xl mb-2 font-semibold">iMac with Apple M1 chip.</h2>
+                <p class="text-gray-500 ">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores. <br> 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage two Thunderbolt / USB 4 ports Magic Mouse Magic keyboard US English</p>
+                <!-- Memory -->
+                <h3 class="text-1xl font-semibold mt-5">Memory</h3>
+                <button id="8gb-memory" class="border border-gray-400 p-1 px-2 rounded shadow bg-gray-900 hover:bg-green-600 text-white">8GB unified memory</button>
+                <button id="memory-16gb" class="border border-gray-400 p-1 px-2 rounded shadow bg-gray-900 hover:bg-green-600  text-white">16GB unified memory</button>
+                <!-- storage -->
+                <h3 class="text-1xl font-semibold mt-5">Storage</h3>
+                <button id="256gb-storage" class="border border-gray-400 p-1 px-2 rounded shadow bg-gray-900 hover:bg-green-600 text-white">256GB SSD storage</button>
+                <button id="512gb-storage" class="border border-gray-400 p-1 px-2 rounded shadow bg-gray-900 hover:bg-green-600 text-white">512GB SSD storage</button>
+                <button id="1tb-storage" class="border border-gray-400 p-1 px-2 rounded shadow bg-gray-900 hover:bg-green-600 text-white">1TB SSD storage</button>
+                <!-- Delivery option -->
+                <h3 class="text-1xl font-semibold mt-5">Choose your delivery option</h3>
+                <button id="prime-delivery" class="border border-gray-400 p-1 px-2 rounded shadow bg-gray-900 hover:bg-green-600 text-white">Friday Aug25 FREE Prime Delivery</button>
+                <button id="charge-delivery" class="border border-gray-400 p-1 px-2 rounded shadow bg-gray-900 hover:bg-green-600 text-white">Friday Aug21 Delivery Charge $20</button>
+                <!-- count total price -->
+                <div class="mt-10">
+                    <h3 class="text-1xl font-semibold  shadow p-1 m-2 shadow w-80">Best Price <span id="best-price" style="margin-left: 180px;">1299</span></h3>
+                    <h3 class="text-1xl font-semibold text-1xl font-semibold m-2 shadow p-1 shadow w-80">Extra Memory Cost<span id="memory-cost" style="margin-left: 125px;">0</span></h3>
+                    <h3 class="text-1xl font-semibold text-1xl font-semibold m-2 shadow p-1 shadow w-80">Extra Storage Cost<span id="storage-cost" style="margin-left: 131px;">0</span></h3>
+                    <h3 class="text-1xl font-semibold text-1xl font-semibold m-2 border-b-2 border-gray-600 p-1 shadow w-80">Delivery Charge<span id="delivery-charge" style="margin-left: 150px;">0</span></h3>
+                    <h3 class="text-1xl font-semibold text-1xl font-semibold m-2 p-1 shadow w-80">Total Price<span id="total-price" style="margin-left: 176px;" >1299</span></h3>
+                    <!-- Add pomo code -->
+                    <h3 class="text-1xl font-semibold mt-5">Add Pomo Code</h3>
+                    <input id="promo-code" class="border border-gray-400 p-1 rounded shadow" type="text">
+                    <button id="apply-btn" class="bg-red-600 hover:bg-green-700 text-white font-semibold rounded px-2 py-1">Apply</button>
+                </div>
+            </div>
+          </div>
+          <!-- Total final price -->
+          <hr>
+          <h3 class="text-3xl font-bold text-center mb-10">Total: $<span id="final-price">1299</span></h3>
+        </section>
+    </main>
+    <script src="js/mac.js"></script>
+</body>
+</html> 
